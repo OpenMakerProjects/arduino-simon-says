@@ -33,7 +33,7 @@ void loop() {
 
     Serial.println("New game is started");
     
-    while (!failed) {
+    while (!failed && currentMemory < 100) {
         playSequenceStartingAnimation();
         delay(200);
 
@@ -62,6 +62,10 @@ void loop() {
         
         delay(200);
         currentMemory++;
+    }
+
+    if (!failed) {
+        Serial.println("Player completed all 100 rounds!");
     }
 
     delay(500);

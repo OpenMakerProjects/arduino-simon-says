@@ -38,3 +38,8 @@ The original project includes a circuit image at [`SimonSays-Circuit.png`](https
 ## Review status
 
 Source, provenance and licence were checked for publication. Hardware operation has not been independently reproduced by OpenMakerProjects.
+
+- Compilation: **Passed** for Arduino Uno using Arduino CLI and Arduino AVR Boards 1.8.8.
+- Secret scan: **Passed**; no credentials or private identifiers were detected.
+- Binary and duplicate scan: **Passed**; no compiled files, installers, archives or duplicate files are included.
+- Known limitation: the game sequence is capped at 100 rounds to match the fixed-size sequence buffer.
